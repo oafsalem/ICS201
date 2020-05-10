@@ -17,6 +17,9 @@ public class Kiwi extends Fruit {
         circle.setFill(new ImagePattern(super.getImage()));
         circle.setCenterX(0);
         circle.setCenterY(Math.max(Main.windowHeight * Math.random(), Main.windowHeight/2.0));
+        circle.setStrokeType(StrokeType.OUTSIDE);
+        circle.setStroke(Color.TRANSPARENT);
+        circle.setStrokeWidth(50 - 25);
         super.setShape(circle);
     }
 }
