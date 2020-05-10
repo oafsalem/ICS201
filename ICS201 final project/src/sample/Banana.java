@@ -20,6 +20,9 @@ public class Banana extends Fruit {
         ellipse.setRadiusY(15);
         ellipse.setFill(new ImagePattern(super.getImage()));
         ellipse.setCenterY(Math.max(Main.windowHeight * Math.random(), Main.windowHeight/2.0));
+        ellipse.setStrokeType(StrokeType.OUTSIDE);
+        ellipse.setStroke(Color.TRANSPARENT);
+        ellipse.setStrokeWidth(60 - 30);
         super.setShape(ellipse);
     }
 
